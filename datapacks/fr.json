@@ -1,0 +1,16 @@
+{
+  "login": {
+    "input_form": "//input[@id='ai_input']",
+    "essentials_only": "//button[span[text()='Essentiels uniquement']]",
+    "password_form": "//input[@name='password']",
+    "not_now": "//button[span[text()='Pas maintenant']]"
+  },
+  "messages": {
+    "send_message": "//div[@placeholder=\"Envoyer un Chat\"]",
+    "list_messages": "//body/main[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li"
+  },
+  "conversations": {
+    "select_conv": "//span[text()='{name}']",
+    "list_convs": "//body/main[1]/div[1]/div[2]/nav[1]/div[1]/div[1]/div[1]/div"
+  }
+}

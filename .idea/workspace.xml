@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2lILB2aPTtMYA1EgTaECP3vZn9E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.extractfromMessages.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/administrateur/Git/snapchatAutomation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.htmlMagic">
+    <configuration name="htmlMagic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="snapchatAutomation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/htmlMagic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="snapchatAutomation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.htmlMagic" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastUrl" value="https://web.snapchat.com/" />
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="" />
+      <created>1724862505025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724862505025</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add initial project setup with Snapchat automation script&#10;&#10;This commit introduces the initial setup for the Snapchat automation project along with necessary configuration files. The main script `main.py` implements functions for logging in, listing conversations, selecting a conversation, and sending messages using Selenium. Added IntelliJ IDEA project files for proper environment configuration, and a JSON data pack for XPaths required by the script.">
+      <option name="closed" value="true" />
+      <created>1727278883115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727278883115</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down.">
+      <option name="closed" value="true" />
+      <created>1727284418259</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727284418259</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor main.py and introduce htmlMagic module&#10;&#10;Refactored main.py by adding docstrings, improving type hints, and modifying function parameters. Introduced the htmlMagic.py module for extracting and interpreting HTML data using BeautifulSoup. This enhances code readability and separation of concerns." />
+    <MESSAGE value="Add initial project setup with Snapchat automation script&#10;&#10;This commit introduces the initial setup for the Snapchat automation project along with necessary configuration files. The main script `main.py` implements functions for logging in, listing conversations, selecting a conversation, and sending messages using Selenium. Added IntelliJ IDEA project files for proper environment configuration, and a JSON data pack for XPaths required by the script." />
+    <MESSAGE value="Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
