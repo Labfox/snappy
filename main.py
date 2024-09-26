@@ -18,13 +18,13 @@ def login(driver, datapack, username, password):
     """
     driver.get("https://web.snapchat.com")
 
-    time.sleep(5)
+    time.sleep(random.uniform(5, 7))
 
     form = driver.find_element(By.XPATH, datapack["login"]["input_form"])
     form.send_keys(username)
     form.send_keys(Keys.ENTER)
 
-    time.sleep(5)
+    time.sleep(random.uniform(5, 7))
 
     accept_all_cookies_button = driver.find_element(By.XPATH, datapack["login"]["essentials_only"])
     accept_all_cookies_button.click()
@@ -33,11 +33,11 @@ def login(driver, datapack, username, password):
     password_form.send_keys(password)
     password_form.send_keys(Keys.ENTER)
 
-    time.sleep(5)
+    time.sleep(random.uniform(5, 7))
 
     driver.find_element(By.XPATH, datapack["login"]["not_now"]).click()
 
-    time.sleep(5)
+    time.sleep(random.uniform(5, 7))
 
 def listConversations(driver, datapack):
     """
