@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 from selenium.webdriver.remote.webelement import WebElement
+import datetime
 
 
 class ExtractedData:
@@ -54,9 +55,9 @@ class DateData(ExtractedData):
     def __str__(self):
         return f"DateData(texts={self.texts}, date={self.date})"
 
-class Conversation():
+class Conversation:
     """
-        class Conversation():
+        class Conversation:
 
         Represents a conversation with details such as title, status, timestamp, and image URL.
 
@@ -96,6 +97,8 @@ def extract_messages(messages: list[WebElement]) -> list[ExtractedData]:
     extracted_data = []
     for message in messages:
         soup = BeautifulSoup(message.get_property("outerHTML"), 'html.parser')
+
+        date = None
 
         if soup.find('header'):
             message_type = 'message'

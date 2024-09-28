@@ -1,0 +1,253 @@
+Index: remote.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/remote.py b/remote.py
+new file mode 100644
+--- /dev/null	(date 1727287806822)
++++ b/remote.py	(date 1727287806822)
+@@ -0,0 +1,20 @@
++from requests import options
++from selenium.webdriver.remote.webdriver import WebDriver
++from selenium.webdriver import EdgeOptions, ChromeOptions
++from selenium.webdriver.remote.remote_connection import RemoteConnection
++from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
++
++url = "http://localhost:4444/wd/hub"
++
++desired_capabilities = DesiredCapabilities.EDGE
++
++conn = RemoteConnection(
++    remote_server_addr=url
++)
++
++options = ChromeOptions()
++
++driver = WebDriver(
++    command_executor=url,
++    options=options
++)
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"d5ce8f5e-d3c8-4c30-99aa-3d553e85beae\" name=\"Changes\" comment=\"Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down.\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 1\n}</component>\n  <component name=\"ProjectId\" id=\"2lILB2aPTtMYA1EgTaECP3vZn9E\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Python.extractfromMessages.executor\": \"Run\",\n    \"Python.main.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"git-widget-placeholder\": \"master\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"/home/administrateur/Git/snapchatAutomation\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"project.structure.last.edited\": \"Project\",\n    \"project.structure.proportion\": \"0.0\",\n    \"project.structure.side.proportion\": \"0.0\",\n    \"settings.editor.selected.configurable\": \"ml.llm.AIAssistantPromptsLibrary\"\n  }\n}]]></component>\n  <component name=\"RunManager\" selected=\"Python.htmlMagic\">\n    <configuration name=\"htmlMagic\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"snapchatAutomation\" />\n      <option name=\"ENV_FILES\" value=\"\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/htmlMagic.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" nameIsGenerated=\"true\">\n      <module name=\"snapchatAutomation\" />\n      <option name=\"ENV_FILES\" value=\"\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/main.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Python.htmlMagic\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SeleniumInternalSettingsState\">\n    <option name=\"lastUrl\" value=\"https://web.snapchat.com/\" />\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"d5ce8f5e-d3c8-4c30-99aa-3d553e85beae\" name=\"Changes\" comment=\"\" />\n      <created>1724862505025</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1724862505025</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Add initial project setup with Snapchat automation script&#10;&#10;This commit introduces the initial setup for the Snapchat automation project along with necessary configuration files. The main script `main.py` implements functions for logging in, listing conversations, selecting a conversation, and sending messages using Selenium. Added IntelliJ IDEA project files for proper environment configuration, and a JSON data pack for XPaths required by the script.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1727278883115</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1727278883115</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1727284418259</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1727284418259</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Refactor main.py and introduce htmlMagic module&#10;&#10;Refactored main.py by adding docstrings, improving type hints, and modifying function parameters. Introduced the htmlMagic.py module for extracting and interpreting HTML data using BeautifulSoup. This enhances code readability and separation of concerns.\" />\n    <MESSAGE value=\"Add initial project setup with Snapchat automation script&#10;&#10;This commit introduces the initial setup for the Snapchat automation project along with necessary configuration files. The main script `main.py` implements functions for logging in, listing conversations, selecting a conversation, and sending messages using Selenium. Added IntelliJ IDEA project files for proper environment configuration, and a JSON data pack for XPaths required by the script.\" />\n    <MESSAGE value=\"Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down.\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down.\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 23b6ec7f73671796b12971cb9d6f8c7494c856cb)
++++ b/.idea/workspace.xml	(date 1727365874319)
+@@ -4,7 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down." />
++    <list default="true" id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="First commit">
++      <change afterPath="$PROJECT_DIR$/datapacks/en.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/remote.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -20,6 +25,18 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;Labfox&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/Labfox/snappy.git&quot;,
++    &quot;accountId&quot;: &quot;34735969-cbd2-49ed-908c-4308add72a2c&quot;
++  }
++}</component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 1
+ }</component>
+@@ -29,23 +46,31 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Python.extractfromMessages.executor": "Run",
+-    "Python.main.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "master",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "/home/administrateur/Git/snapchatAutomation",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "project.structure.last.edited": "Project",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.0",
+-    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary"
+-  }
+-}]]></component>
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Python.extractfromMessages.executor&quot;: &quot;Run&quot;,
++    &quot;Python.main.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/home/administrateur/Git/snapchatAutomation/datapacks&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AIAssistantPromptsLibrary&quot;
++  }
++}</component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/datapacks" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/datapacks" />
++    </key>
++  </component>
+   <component name="RunManager" selected="Python.htmlMagic">
+     <configuration name="htmlMagic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="snapchatAutomation" />
+@@ -132,17 +157,37 @@
+       <option name="project" value="LOCAL" />
+       <updated>1727284418259</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="First commit">
++      <option name="closed" value="true" />
++      <created>1727284722383</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1727284722383</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Refactor main.py and introduce htmlMagic module&#10;&#10;Refactored main.py by adding docstrings, improving type hints, and modifying function parameters. Introduced the htmlMagic.py module for extracting and interpreting HTML data using BeautifulSoup. This enhances code readability and separation of concerns." />
+     <MESSAGE value="Add initial project setup with Snapchat automation script&#10;&#10;This commit introduces the initial setup for the Snapchat automation project along with necessary configuration files. The main script `main.py` implements functions for logging in, listing conversations, selecting a conversation, and sending messages using Selenium. Added IntelliJ IDEA project files for proper environment configuration, and a JSON data pack for XPaths required by the script." />
+     <MESSAGE value="Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down." />
++    <MESSAGE value="First commit" />
++    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
+Index: docker-compose.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/docker-compose.yml b/docker-compose.yml
+new file mode 100644
+--- /dev/null	(date 1727287573691)
++++ b/docker-compose.yml	(date 1727287573691)
+@@ -0,0 +1,52 @@
++# To execute this docker compose yml file use `docker compose -f docker-compose-v3.yml up`
++# Add the `-d` flag at the end for detached execution
++# To stop the execution, hit Ctrl+C, and then `docker compose -f docker-compose-v3.yml down`
++version: "3"
++services:
++  chrome:
++    image: selenium/node-chrome:4.25.0-20240922
++    deploy:
++      replicas: 3
++    volumes:
++      - /dev/shm:/dev/shm
++    depends_on:
++      - selenium-hub
++    environment:
++      - SE_EVENT_BUS_HOST=selenium-hub
++      - SE_EVENT_BUS_PUBLISH_PORT=4442
++      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
++
++  edge:
++    image: selenium/node-edge
++    deploy:
++      replicas: 3
++    volumes:
++      - /dev/shm:/dev/shm
++    depends_on:
++      - selenium-hub
++    environment:
++      - SE_EVENT_BUS_HOST=selenium-hub
++      - SE_EVENT_BUS_PUBLISH_PORT=4442
++      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
++
++  firefox:
++    image: selenium/node-firefox
++    deploy:
++      replicas: 3
++    shm_size: 2gb
++    volumes:
++      - /dev/shm:/dev/shm
++    depends_on:
++      - selenium-hub
++    environment:
++      - SE_EVENT_BUS_HOST=selenium-hub
++      - SE_EVENT_BUS_PUBLISH_PORT=4442
++      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
++
++  selenium-hub:
++    image: selenium/hub
++    container_name: selenium-hub
++    ports:
++      - "4442:4442"
++      - "4443:4443"
++      - "4444:4444"
+\ No newline at end of file
+Index: datapacks/en.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/datapacks/en.json b/datapacks/en.json
+new file mode 100644
+--- /dev/null	(date 1727286414030)
++++ b/datapacks/en.json	(date 1727286414030)
+@@ -0,0 +1,16 @@
++{
++  "login": {
++    "input_form": "//input[@id='ai_input']",
++    "essentials_only": "//button[span[text()='Essential Only']]",
++    "password_form": "//input[@name='password']",
++    "not_now": "//button[span[text()='Not now']]"
++  },
++  "messages": {
++    "send_message": "//div[@placeholder=\"Send a chat\"]",
++    "list_messages": "//body/main[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li"
++  },
++  "conversations": {
++    "select_conv": "//span[text()='{name}']",
++    "list_convs": "//body/main[1]/div[1]/div[2]/nav[1]/div[1]/div[1]/div[1]/div"
++  }
++}
+\ No newline at end of file

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down." />
+    <list default="true" id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="Better sleeping">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/remote.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Labfox&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Labfox/snappy.git&quot;,
+    &quot;accountId&quot;: &quot;34735969-cbd2-49ed-908c-4308add72a2c&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -29,23 +45,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.extractfromMessages.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/administrateur/Git/snapchatAutomation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.extractfromMessages.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/administrateur/Git/snapchatAutomation/datapacks&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AIAssistantPromptsLibrary&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/datapacks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/datapacks" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.htmlMagic">
     <configuration name="htmlMagic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="snapchatAutomation" />
@@ -132,17 +156,55 @@
       <option name="project" value="LOCAL" />
       <updated>1727284418259</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1727284722383</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727284722383</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add datapacks/en.json">
+      <option name="closed" value="true" />
+      <created>1727365925786</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727365925786</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Better sleeping">
+      <option name="closed" value="true" />
+      <created>1727366046135</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727366046135</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor main.py and introduce htmlMagic module&#10;&#10;Refactored main.py by adding docstrings, improving type hints, and modifying function parameters. Introduced the htmlMagic.py module for extracting and interpreting HTML data using BeautifulSoup. This enhances code readability and separation of concerns." />
     <MESSAGE value="Add initial project setup with Snapchat automation script&#10;&#10;This commit introduces the initial setup for the Snapchat automation project along with necessary configuration files. The main script `main.py` implements functions for logging in, listing conversations, selecting a conversation, and sending messages using Selenium. Added IntelliJ IDEA project files for proper environment configuration, and a JSON data pack for XPaths required by the script." />
     <MESSAGE value="Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add htmlMagic module and docstrings for main functions&#10;&#10;This commit introduces the `htmlMagic` module, streamlining the extraction and interpretation of web elements. Enhanced `main.py` by adding detailed docstrings, refining function parameters, and improving message sending with optional cool-down." />
+    <MESSAGE value="First commit" />
+    <MESSAGE value="Add datapacks/en.json" />
+    <MESSAGE value="Better sleeping" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better sleeping" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

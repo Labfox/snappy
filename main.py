@@ -71,6 +71,7 @@ def sendMessage(driver, datapack, message, cool_down=False):
     :param driver: The WebDriver instance used to interact with the web browser.
     :param message: The message text to be sent.
     :param datapack: A dictionary containing data required for the function, including locators.
+    :param cool_down: Simulate human typing ?
     :return: None
     """
     sendMsgElem: WebElement = driver.find_element(By.XPATH, datapack["messages"]["send_message"])
