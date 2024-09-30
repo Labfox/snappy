@@ -10,29 +10,41 @@ class ExtractedData:
     Attributes:
         texts (list): A list of text strings extracted.
     """
+
     def __init__(self, texts):
         self.texts = texts
 
     def __str__(self):
         return f"ExtractedData(texts={self.texts})"
 
+    def __eq__(self, other):
+        if isinstance(other, ExtractedData):
+            return self.texts == other.texts
+        return False
+
 
 class MessageData(ExtractedData):
     """
-        MessageData class inherits from the ExtractedData class to represent message data along with the author information.
+    MessageData class inherits from the ExtractedData class to represent message data along with the author information.
 
-        Methods:
-            __init__(texts, author):
-                Initializes the MessageData instance with provided texts and author.
-            __str__():
-                Returns a string representation of the MessageData instance.
+    Methods:
+        __init__(texts, author):
+            Initializes the MessageData instance with provided texts and author.
+        __str__():
+            Returns a string representation of the MessageData instance.
     """
+
     def __init__(self, texts, author):
         super().__init__(texts)
         self.author = author
 
     def __str__(self):
         return f"MessageData(texts={self.texts}, author={self.author})"
+
+    def __eq__(self, other):
+        if isinstance(other, MessageData):
+            return self.texts == other.texts and self.author == other.author
+        return False
 
 
 class DateData(ExtractedData):
@@ -48,12 +60,18 @@ class DateData(ExtractedData):
     - texts (list): A list of extracted texts.
     - date (datetime): The date associated with the extracted data.
     """
+
     def __init__(self, texts, date):
         super().__init__(texts)
         self.date = date
 
     def __str__(self):
         return f"DateData(texts={self.texts}, date={self.date})"
+
+    def __eq__(self, other):
+        if isinstance(other, DateData):
+            return self.texts == other.texts and self.date == other.date
+        return False
 
 class Conversation:
     """
@@ -76,7 +94,10 @@ class Conversation:
         -------
         __str__():
             Returns a string representation of the Conversation object.
+        __eq__(other):
+            Checks equality between two Conversation objects.
     """
+
     def __init__(self, title, status, timestamp, image_url):
         self.title = title
         self.status = status
@@ -85,6 +106,14 @@ class Conversation:
 
     def __str__(self):
         return f"Conversation(title={self.title}, status={self.status}, timestamp={self.timestamp}, image_url={self.image_url})"
+
+    def __eq__(self, other):
+        if isinstance(other, Conversation):
+            return (self.title == other.title and
+                    self.status == other.status and
+                    self.timestamp == other.timestamp and
+                    self.image_url == other.image_url)
+        return False
 
 
 def extract_messages(messages: list[WebElement]) -> list[ExtractedData]:
