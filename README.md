@@ -1,1 +1,1 @@
-# A wrapper for snapchat API.
+# A snapchat API (webdriver)

@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AIAssistantCustomInstructionsStorage">
+    <option name="instructions">
+      <map>
+        <entry key="AIAssistant.VCS.GenerateCommitMessage">
+          <value>
+            <AIAssistantStoredInstruction>
+              <option name="actionId" value="AIAssistant.VCS.GenerateCommitMessage" />
+              <option name="content" value="Create a commit message using Conventional Commit format, use bullet points if you there are multiple changes." />
+            </AIAssistantStoredInstruction>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="Better sleeping">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/remote.py" afterDir="false" />
+    <list default="true" id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="feat: &#10;- add `remote.py` to handle remote WebDriver connections&#10;- restructure project by moving `main.py` and `htmlMagic.py` to `src/` directory&#10;- add `docker-compose.yml` for selenium infrastructure setup&#10;&#10;refactor: &#10;- convert procedural code in `main.py` to `SnapchatClient` and `SnapchatCredentials` classes&#10;- add docstrings and type hints for better code clarity&#10;&#10;fix: &#10;- implement equality methods for `ExtractedData`, `MessageData`, `DateData`, and `Conversation` classes&#10;&#10;chore: add `datapacks/by/title.json` for datapack mapping">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_09_2024_17_51_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_09_2024_17_51__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Stub" />
         <option value="Python Script" />
       </list>
     </option>
@@ -45,28 +61,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.extractfromMessages.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/administrateur/Git/snapchatAutomation/datapacks&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AIAssistantPromptsLibrary&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.extractfromMessages.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/administrateur/Git/snapchatAutomation/datapacks",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/datapacks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/datapacks/by" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/datapacks" />
     </key>
   </component>
@@ -84,7 +103,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/htmlMagic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/htmlMagic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +125,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,7 +146,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92" />
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
       </set>
     </attachedChunks>
   </component>
@@ -180,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727366046135</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: &#10;- add `remote.py` to handle remote WebDriver connections&#10;- restructure project by moving `main.py` and `htmlMagic.py` to `src/` directory&#10;- add `docker-compose.yml` for selenium infrastructure setup&#10;&#10;refactor: &#10;- convert procedural code in `main.py` to `SnapchatClient` and `SnapchatCredentials` classes&#10;- add docstrings and type hints for better code clarity&#10;&#10;fix: &#10;- implement equality methods for `ExtractedData`, `MessageData`, `DateData`, and `Conversation` classes&#10;&#10;chore: add `datapacks/by/title.json` for datapack mapping">
+      <option name="closed" value="true" />
+      <created>1727716839439</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727716839439</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +231,9 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Add datapacks/en.json" />
     <MESSAGE value="Better sleeping" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better sleeping" />
+    <MESSAGE value="feat: &#10;&#10;- Add new `remote.py` for WebDriver initialization.&#10;- Create `SnapchatClient` class in `src/main.py` for managing Snapchat interactions.&#10;- Move `main.py` to `src/` and refactor imports.&#10;- Implement `__eq__` methods in `htmlMagic.py` for data comparison.&#10;- Add Docker Compose file for Selenium Grid setup.&#10;- Create initial datapack mapping for Snapchat titles in JSON.&#10;&#10;test: &#10;&#10;- Add `v1test.py` to test `SnapchatClient` with Docker-based WebDriver.&#10;&#10;refactor: &#10;&#10;- Move `htmlMagic.py` to `src/` directory.&#10;- Utilize `SnapchatClient` for encapsulating Snapchat logic.&#10;- Change selenium WebDriver dependencies from `main.py` to `remote.py`.&#10;&#10;" />
+    <MESSAGE value="feat: &#10;- add `remote.py` to handle remote WebDriver connections&#10;- restructure project by moving `main.py` and `htmlMagic.py` to `src/` directory&#10;- add `docker-compose.yml` for selenium infrastructure setup&#10;&#10;refactor: &#10;- convert procedural code in `main.py` to `SnapchatClient` and `SnapchatCredentials` classes&#10;- add docstrings and type hints for better code clarity&#10;&#10;fix: &#10;- implement equality methods for `ExtractedData`, `MessageData`, `DateData`, and `Conversation` classes&#10;&#10;chore: add `datapacks/by/title.json` for datapack mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;- add `remote.py` to handle remote WebDriver connections&#10;- restructure project by moving `main.py` and `htmlMagic.py` to `src/` directory&#10;- add `docker-compose.yml` for selenium infrastructure setup&#10;&#10;refactor: &#10;- convert procedural code in `main.py` to `SnapchatClient` and `SnapchatCredentials` classes&#10;- add docstrings and type hints for better code clarity&#10;&#10;fix: &#10;- implement equality methods for `ExtractedData`, `MessageData`, `DateData`, and `Conversation` classes&#10;&#10;chore: add `datapacks/by/title.json` for datapack mapping" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
