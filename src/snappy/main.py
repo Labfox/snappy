@@ -9,6 +9,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 
 from . import htmlMagic
+from .datapacks import get_datapack, get_index
+
 
 class SnapchatCredentials:
     """
@@ -72,8 +74,8 @@ class SnapchatClient:
         :param title: The title of the datapack to retrieve.
         :return: The datapack associated with the given title.
         """
-        list = json.load(open("datapacks/by/title.json", "r"))
-        return json.load(open("datapacks/" + list[title], "r"))
+        id_list = json.loads(get_index("title"))
+        return json.loads(get_datapack(id_list[title]))
 
     def getDatapackIdentifier(self):
         """
@@ -140,14 +142,14 @@ class SnapchatClient:
         return messages
 
 
-    def selectConversation(self, conversation:htmlMagic.Conversation):
+    def selectConversation(self, conversation: htmlMagic.Conversation):
         """
         :param conversation: The conversation object to be selected, containing conversation details.
         :return: None
         """
         self.driver.find_element(By.XPATH, self.datapack["conversations"]["select_conv"].format(name=conversation.title)).click()
 
-    def sendMessage(self, conversation:htmlMagic.Conversation, message, cool_down=True):
+    def sendMessage(self, conversation: htmlMagic.Conversation, message, cool_down=True):
         """
         :param message: The message text to be sent.
         :param cool_down: Simulate human typing ?

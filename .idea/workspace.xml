@@ -18,11 +18,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="feat: &#10;- add `remote.py` to handle remote WebDriver connections&#10;- restructure project by moving `main.py` and `htmlMagic.py` to `src/` directory&#10;- add `docker-compose.yml` for selenium infrastructure setup&#10;&#10;refactor: &#10;- convert procedural code in `main.py` to `SnapchatClient` and `SnapchatCredentials` classes&#10;- add docstrings and type hints for better code clarity&#10;&#10;fix: &#10;- implement equality methods for `ExtractedData`, `MessageData`, `DateData`, and `Conversation` classes&#10;&#10;chore: add `datapacks/by/title.json` for datapack mapping">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_09_2024_17_51_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_09_2024_17_51__Changes_.xml" beforeDir="false" />
+    <list default="true" id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="packaged">
+      <change afterPath="$PROJECT_DIR$/src/snappy/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snappy/datapacks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datapacks/by/title.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/snappy/datapacks/by/title.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datapacks/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/snappy/datapacks/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datapacks/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/snappy/datapacks/fr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/htmlMagic.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/snappy/htmlMagic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/snappy/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,9 +90,11 @@
       <recent name="$PROJECT_DIR$/datapacks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/datapacks/by" />
+      <recent name="$PROJECT_DIR$/src/snappy" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/datapacks" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/snappy" />
+      <recent name="$PROJECT_DIR$/datapacks/by" />
     </key>
   </component>
   <component name="RunManager" selected="Python.htmlMagic">
@@ -103,7 +111,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/htmlMagic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/snappy/htmlMagic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +133,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/snappy/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -207,7 +215,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727716839439</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="little update">
+      <option name="closed" value="true" />
+      <created>1734802392617</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734802392617</updated>
+    </task>
+    <task id="LOCAL-00008" summary="packaged">
+      <option name="closed" value="true" />
+      <created>1734802618500</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734802618500</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +257,9 @@
     <MESSAGE value="Better sleeping" />
     <MESSAGE value="feat: &#10;&#10;- Add new `remote.py` for WebDriver initialization.&#10;- Create `SnapchatClient` class in `src/main.py` for managing Snapchat interactions.&#10;- Move `main.py` to `src/` and refactor imports.&#10;- Implement `__eq__` methods in `htmlMagic.py` for data comparison.&#10;- Add Docker Compose file for Selenium Grid setup.&#10;- Create initial datapack mapping for Snapchat titles in JSON.&#10;&#10;test: &#10;&#10;- Add `v1test.py` to test `SnapchatClient` with Docker-based WebDriver.&#10;&#10;refactor: &#10;&#10;- Move `htmlMagic.py` to `src/` directory.&#10;- Utilize `SnapchatClient` for encapsulating Snapchat logic.&#10;- Change selenium WebDriver dependencies from `main.py` to `remote.py`.&#10;&#10;" />
     <MESSAGE value="feat: &#10;- add `remote.py` to handle remote WebDriver connections&#10;- restructure project by moving `main.py` and `htmlMagic.py` to `src/` directory&#10;- add `docker-compose.yml` for selenium infrastructure setup&#10;&#10;refactor: &#10;- convert procedural code in `main.py` to `SnapchatClient` and `SnapchatCredentials` classes&#10;- add docstrings and type hints for better code clarity&#10;&#10;fix: &#10;- implement equality methods for `ExtractedData`, `MessageData`, `DateData`, and `Conversation` classes&#10;&#10;chore: add `datapacks/by/title.json` for datapack mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;- add `remote.py` to handle remote WebDriver connections&#10;- restructure project by moving `main.py` and `htmlMagic.py` to `src/` directory&#10;- add `docker-compose.yml` for selenium infrastructure setup&#10;&#10;refactor: &#10;- convert procedural code in `main.py` to `SnapchatClient` and `SnapchatCredentials` classes&#10;- add docstrings and type hints for better code clarity&#10;&#10;fix: &#10;- implement equality methods for `ExtractedData`, `MessageData`, `DateData`, and `Conversation` classes&#10;&#10;chore: add `datapacks/by/title.json` for datapack mapping" />
+    <MESSAGE value="little update" />
+    <MESSAGE value="packaged" />
+    <option name="LAST_COMMIT_MESSAGE" value="packaged" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
