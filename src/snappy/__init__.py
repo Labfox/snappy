@@ -1,1 +1,1 @@
-from main import SnapchatClient, SnapchatCredentials
+from .main import SnapchatClient, SnapchatCredentials
