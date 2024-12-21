@@ -18,17 +18,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="packaged">
-      <change afterPath="$PROJECT_DIR$/src/snappy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/snappy/datapacks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datapacks/by/title.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/snappy/datapacks/by/title.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datapacks/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/snappy/datapacks/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datapacks/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/snappy/datapacks/fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/htmlMagic.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/snappy/htmlMagic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/snappy/main.py" afterDir="false" />
+    <list default="true" id="d5ce8f5e-d3c8-4c30-99aa-3d553e85beae" name="Changes" comment="packaging 3">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snappy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/snappy/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,9 +82,9 @@
       <recent name="$PROJECT_DIR$/datapacks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/snappy" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/snappy" />
       <recent name="$PROJECT_DIR$/datapacks/by" />
     </key>
@@ -231,7 +223,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734802618500</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="packaging 2">
+      <option name="closed" value="true" />
+      <created>1734803382196</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734803382196</updated>
+    </task>
+    <task id="LOCAL-00010" summary="packaging 3">
+      <option name="closed" value="true" />
+      <created>1734804495515</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734804495515</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +267,9 @@
     <MESSAGE value="feat: &#10;- add `remote.py` to handle remote WebDriver connections&#10;- restructure project by moving `main.py` and `htmlMagic.py` to `src/` directory&#10;- add `docker-compose.yml` for selenium infrastructure setup&#10;&#10;refactor: &#10;- convert procedural code in `main.py` to `SnapchatClient` and `SnapchatCredentials` classes&#10;- add docstrings and type hints for better code clarity&#10;&#10;fix: &#10;- implement equality methods for `ExtractedData`, `MessageData`, `DateData`, and `Conversation` classes&#10;&#10;chore: add `datapacks/by/title.json` for datapack mapping" />
     <MESSAGE value="little update" />
     <MESSAGE value="packaged" />
-    <option name="LAST_COMMIT_MESSAGE" value="packaged" />
+    <MESSAGE value="packaging 2" />
+    <MESSAGE value="packaging 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="packaging 3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
